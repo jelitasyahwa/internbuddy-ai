@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InternBuddy AI — Chat AI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Overlay for mobile sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Mobile sidebar toggle -->
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+
+  <div class="app-layout">
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.33 8.67 1.33 12 0v-5"/></svg>
+        </span>
+        InternBuddy AI
+      </div>
+      <nav class="sidebar-nav">
+        <a href="chat.html" class="active">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Chat AI
+        </a>
+        <a href="panduan.html">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Panduan Magang
+        </a>
+        <a href="checklist.html">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          Checklist Magang
+        </a>
+        <a href="index.html#tentang">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Tentang
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ===================== MAIN ===================== -->
+    <div class="main-content">
+      <div class="chat-layout">
+
+        <!-- Chat header -->
+        <div class="chat-header">
+          <div class="chat-header-inner">
+            <h1>Chat dengan InternBuddy AI</h1>
+            <button class="btn-clear" id="clearBtn" title="Mulai percakapan baru">
+              <svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
+              Percakapan Baru
+            </button>
+          </div>
+        </div>
+
+        <!-- Conversation area -->
+        <div class="chat-body" id="chatBody">
+          <!-- Welcome message from AI -->
+          <div class="message ai-message">
+            <div class="message-avatar">
+              <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.33 8.67 1.33 12 0v-5"/></svg>
+            </div>
+            <div class="message-bubble">
+              <strong>Halo! Saya InternBuddy AI 👋</strong><br/>
+              Saya siap membantu kamu dengan pertanyaan seputar magang. Silakan ketik pertanyaanmu atau pilih salah satu topik di bawah!
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick questions -->
+        <div class="quick-questions-wrap" id="quickQuestionsWrap">
+          <p class="quick-questions-label">💡 Pertanyaan yang sering ditanyakan:</p>
+          <div id="quickQuestions"></div>
+        </div>
+
+        <!-- Chat input -->
+        <div class="chat-footer">
+          <form class="chat-input-wrap" id="chatForm" autocomplete="off">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Ketik pertanyaanmu di sini..."
+              aria-label="Tulis pesan"
+              maxlength="500"
+            />
+            <button type="submit" class="btn-send" id="sendBtn" aria-label="Kirim pesan">
+              <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/chat.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

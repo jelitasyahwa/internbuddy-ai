@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InternBuddy AI — Beranda</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== TOP NAV ===================== -->
+  <header class="topnav">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.33 8.67 1.33 12 0v-5"/></svg>
+        </span>
+        InternBuddy AI
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="panduan.html">Panduan Magang</a>
+        <a href="checklist.html">Checklist</a>
+        <a href="#tentang">Tentang</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="chat.html" class="btn btn-primary">Mulai Chat</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown nav -->
+    <nav class="mobile-nav" id="mobileNav" style="display:none;">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="panduan.html">Panduan Magang</a>
+      <a href="checklist.html">Checklist</a>
+      <a href="#tentang">Tentang</a>
+      <a href="chat.html" class="btn btn-primary">Mulai Chat</a>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-text">
+            <h1><span>InternBuddy</span> AI</h1>
+            <p>Asisten AI untuk membantu persiapan, adaptasi, dan penyelesaian kendala selama magang.</p>
+            <a href="chat.html" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Mulai Chat dengan AI
+            </a>
+          </div>
+
+          <!-- SVG Illustration: student at laptop -->
+          <div class="hero-illustration" aria-hidden="true">
+            <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background circle -->
+              <circle cx="300" cy="180" r="160" fill="#ede9fe" opacity="0.6"/>
+
+              <!-- Books stack -->
+              <rect x="150" y="290" width="90" height="14" rx="3" fill="#f59e0b"/>
+              <rect x="155" y="276" width="80" height="14" rx="3" fill="#fbbf24"/>
+              <rect x="160" y="262" width="70" height="14" rx="3" fill="#fcd34d"/>
+
+              <!-- Plant pot -->
+              <rect x="370" y="295" width="30" height="35" rx="4" fill="#7c3aed" opacity="0.7"/>
+              <ellipse cx="385" cy="295" rx="20" ry="6" fill="#6d28d9" opacity="0.7"/>
+              <!-- Plant leaves -->
+              <ellipse cx="375" cy="260" rx="16" ry="26" fill="#34d399" transform="rotate(-15 375 260)"/>
+              <ellipse cx="395" cy="255" rx="14" ry="24" fill="#10b981" transform="rotate(10 395 255)"/>
+              <ellipse cx="385" cy="268" rx="8" ry="28" fill="#059669"/>
+
+              <!-- Desk surface -->
+              <rect x="120" y="304" width="300" height="12" rx="4" fill="#d1d5db"/>
+
+              <!-- Laptop base -->
+              <rect x="190" y="255" width="160" height="50" rx="6" fill="#374151"/>
+              <!-- Laptop screen -->
+              <rect x="180" y="180" width="180" height="120" rx="8" fill="#1f2937"/>
+              <rect x="188" y="188" width="164" height="104" rx="4" fill="#7c3aed" opacity="0.15"/>
+              <!-- Screen content lines -->
+              <rect x="200" y="200" width="80" height="6" rx="3" fill="#8b5cf6" opacity="0.7"/>
+              <rect x="200" y="214" width="120" height="5" rx="2.5" fill="#c4b5fd" opacity="0.5"/>
+              <rect x="200" y="226" width="100" height="5" rx="2.5" fill="#c4b5fd" opacity="0.4"/>
+              <rect x="200" y="238" width="60" height="5" rx="2.5" fill="#c4b5fd" opacity="0.3"/>
+              <!-- Chat bubble on screen -->
+              <rect x="264" y="254" width="64" height="22" rx="8" fill="#7c3aed" opacity="0.8"/>
+              <rect x="200" y="262" width="56" height="20" rx="8" fill="#ede9fe"/>
+              <!-- Laptop hinge -->
+              <rect x="190" y="252" width="160" height="6" rx="2" fill="#4b5563"/>
+
+              <!-- Person body -->
+              <ellipse cx="280" cy="355" rx="40" ry="14" fill="#ede9fe" opacity="0.5"/>
+              <!-- Torso -->
+              <rect x="252" y="270" width="56" height="70" rx="12" fill="#7c3aed"/>
+              <!-- Collar -->
+              <path d="M268 270 Q280 282 292 270" fill="white" opacity="0.6"/>
+              <!-- Left arm -->
+              <path d="M252 290 Q220 310 215 320" stroke="#fde68a" stroke-width="22" stroke-linecap="round" fill="none"/>
+              <ellipse cx="210" cy="324" rx="12" ry="10" fill="#fde68a"/>
+              <!-- Right arm -->
+              <path d="M308 290 Q340 310 345 318" stroke="#fde68a" stroke-width="22" stroke-linecap="round" fill="none"/>
+              <ellipse cx="348" cy="322" rx="12" ry="10" fill="#fde68a"/>
+              <!-- Neck -->
+              <rect x="272" y="255" width="16" height="18" rx="6" fill="#fde68a"/>
+              <!-- Head -->
+              <ellipse cx="280" cy="232" rx="32" ry="34" fill="#fde68a"/>
+              <!-- Hair -->
+              <ellipse cx="280" cy="205" rx="34" ry="22" fill="#1f2937"/>
+              <ellipse cx="260" cy="220" rx="12" ry="18" fill="#1f2937"/>
+              <ellipse cx="300" cy="220" rx="12" ry="18" fill="#1f2937"/>
+              <!-- Face -->
+              <circle cx="270" cy="232" r="3" fill="#1f2937"/>
+              <circle cx="290" cy="232" r="3" fill="#1f2937"/>
+              <path d="M272 245 Q280 252 288 245" stroke="#7c3aed" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+              <!-- Sparkle decorations -->
+              <text x="140" y="165" font-size="20" fill="#7c3aed" opacity="0.7">✦</text>
+              <text x="400" y="140" font-size="14" fill="#8b5cf6" opacity="0.6">✦</text>
+              <text x="420" y="200" font-size="10" fill="#a78bfa" opacity="0.5">✦</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="features-section">
+      <div class="container">
+        <h2>Apa yang Bisa Saya Bantu?</h2>
+        <p class="section-sub">InternBuddy AI siap menemani kamu dari persiapan hingga selesai magang.</p>
+        <div class="cards-grid">
+
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Persiapan Magang</h3>
+            <p>Panduan lengkap hal-hal yang perlu disiapkan sebelum hari pertama masuk kerja magang.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Komunikasi Profesional</h3>
+            <p>Contoh dan tips berkomunikasi dengan sopan kepada supervisor maupun rekan kerja.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>Mengatasi Kendala</h3>
+            <p>Cara menghadapi masalah umum selama magang, dari kesulitan tugas hingga tekanan kerja.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Checklist Magang</h3>
+            <p>Buat dan kelola daftar kegiatan persiapan magangmu dengan fitur CRUD lengkap.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TENTANG ===================== -->
+    <section class="about-section" id="tentang">
+      <div class="container">
+        <div class="about-card">
+          <h2>Tentang InternBuddy AI</h2>
+          <p>
+            <strong>InternBuddy AI</strong> adalah asisten virtual berbasis kecerdasan buatan yang dirancang khusus untuk membantu mahasiswa dalam menjalani kegiatan magang secara lebih siap dan percaya diri.
+          </p>
+          <p>
+            Banyak mahasiswa mengalami kesulitan ketika pertama kali memasuki lingkungan kerja profesional — mulai dari kurangnya persiapan, kebingungan memahami tugas, hingga hambatan dalam berkomunikasi dengan supervisor. InternBuddy AI hadir sebagai teman yang selalu siap membantu kapan saja.
+          </p>
+          <p>
+            Aplikasi ini ditujukan untuk <strong>mahasiswa perguruan tinggi</strong> yang akan atau sedang menjalani program magang, terutama mereka yang belum memiliki banyak pengalaman di dunia kerja profesional.
+          </p>
+          <div class="about-tags">
+            <span>🎓 Mahasiswa Magang</span>
+            <span>💬 Tanya Jawab AI</span>
+            <span>📋 Panduan Praktis</span>
+            <span>💼 Siap Kerja</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>© 2024 InternBuddy AI — Asisten virtual untuk mahasiswa magang.</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
